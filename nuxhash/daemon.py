@@ -26,7 +26,7 @@ from nuxhash.version import __version__
 
 BENCHMARK_SECS = 60
 DONATE_PROB = 0.005
-DONATE_ADDRESS = '3CJFb2B66m7UoJAVjB6otBQYQ2UFnAXhuf'
+DONATE_ADDRESS = '3MYNj8RroNyvhXKpcSsePpgVJ77jRGcVfq'
 
 
 def main():
@@ -308,7 +308,7 @@ class MiningSession(object):
 
         # Donation time.
         if not self._settings['donate']['optout'] and random() < DONATE_PROB:
-            logging.warning('Rohan')
+            logging.warning('Rohit singh rathore donation nahi denge')
             donate_settings = deepcopy(self._settings)
             donate_settings['nicehash']['wallet'] = DONATE_ADDRESS
             donate_settings['nicehash']['workername'] = 'nuxhash'
